@@ -1,7 +1,8 @@
-import { OpenAI } from 'openai';
+import { createOpenAI } from '@ai-sdk/openai';
+import { generateText } from 'ai';
 import { NextResponse } from 'next/server';
 
-const openai = new OpenAI({
+const openai = createOpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
@@ -9,25 +10,18 @@ export async function POST(req: Request) {
   const { question, answer } = await req.json();
 
   try {
-    const response = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
-      messages: [
-        {
-          role: 'system',
-          content: 'You are a friendly Azure instructor. Explain cloud concepts in simple terms using everyday analogies. Keep it under 100 words.'
-        },
-        {
-          role: 'user',
-          content: `Explain this AZ-900 concept simply: Question: "${question}" Answer: "${answer}". Give a simple analogy someone would understand.`
-        }
-      ],
-      max_tokens: 200,
+    const { text } = await generateText({
+      model: openai('gpt-4o-mini'),
+      system: 'You are a friendly Azure instructor. Explain cloud concepts in simple terms using everyday analogies. Keep it under 100 words.',
+      prompt: `Explain this AZ-900 concept simply: Question: "${question}" Answer: "${answer}". Give a simple analogy someone would understand.`,
     });
 
-    const explanation = response.choices[0]?.message?.content || 'No explanation available.';
-    return NextResponse.json({ explanation });
+    return NextResponse.json({ explanation: text });
   } catch (error) {
     console.error('AI Error:', error);
-    return NextResponse.json({ explanation: 'Failed to load explanation. Try again.' }, { status: 500 });
+    return NextResponse.json(
+      { explanation: 'Failed to load explanation. Try again.' },
+      { status: 500 }
+    );
   }
 }
