@@ -1,4 +1,4 @@
-# 🧠  AzureFlow: Adaptive Flashcard Coach
+# 🧠 AzureFlow: Adaptive Flashcard Coach
 
 > **Unofficial AZ-900 Exam Prep Tool**  
 > Built for the Vibe Coding Hackathon: AZ-900 Exam Prep Edition
@@ -9,10 +9,10 @@ Learners memorize Azure terms but fail to understand the *context* or *applicati
 ## 💡 The Solution
 AzureFlow is an AI-powered flashcard coach that uses **Spaced Repetition** and **Contextual Explanations** to turn passive memorization into active understanding.
 
-### ✨  Key Features
+### ✨ Key Features
 - **🔄 Adaptive Spaced Repetition:** Cards reappear based on difficulty (SM-2 Algorithm).
 - **🤖 AI "Why" Engine:** Instantly generates clear, simple explanations for every answer.
-- **🌍 African Context Mode:** Real-world examples relevant to African learners (e.g., "How Netflix uses Azure CDN in Nigeria").
+- **🌍 African Context Mode:** Real-world examples relevant to African learners.
 - **📊 Progress Dashboard:** Visualizes weak areas based on quiz performance.
 
 ## 🛠️ Tech Stack
@@ -22,8 +22,7 @@ AzureFlow is an AI-powered flashcard coach that uses **Spaced Repetition** and *
 - **Deployment:** Vercel
 
 ## 📸 Demo
-![Demo Screenshot](./public/demo-screenshot.png)
-[Watch Full Demo Video](https://your-demo-link.com)
+[Add a screenshot or video link here]
 
 ## 📂 Project Structure
 ```text
@@ -33,6 +32,5 @@ azure-flow/
 │   ├── study/            # Flashcard interface
 │   └── api/              # AI explanation endpoints
 ├── components/           # Reusable UI (Card, Button, Navbar)
-├── lib/                  # Supabase client, AI utilities
 ├── data/                 # Custom AZ-900 flashcard dataset (JSON)
 └── README.md

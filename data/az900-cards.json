@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "topic": "Cloud Concepts",
+    "front": "What is the difference between Vertical Scaling and Horizontal Scaling?",
+    "back": "Vertical = More Power (CPU/RAM). Horizontal = More Machines.",
+    "explanation": "Vertical is like buying a bigger truck. Horizontal is like buying more small trucks.",
+    "africanContext": "Vertical: Upgrading one generator. Horizontal: Buying 5 smaller generators."
+  },
+  {
+    "id": 2,
+    "topic": "Core Services",
+    "front": "Which Azure service is best for storing unstructured data like images?",
+    "back": "Azure Blob Storage",
+    "explanation": "Blob storage is optimized for massive amounts of unstructured data, unlike SQL which needs structured rows.",
+    "africanContext": "Like storing photos in a cloud album vs. organizing files in Excel."
+  },
+  {
+    "id": 3,
+    "topic": "Core Services",
+    "front": "What does Azure App Service provide?",
+    "back": "A Platform-as-a-Service (PaaS) for hosting web apps without managing infrastructure.",
+    "explanation": "You just upload your code. Azure handles servers, OS patches, and scaling automatically.",
+    "africanContext": "Like renting a furnished apartment instead of building a house from scratch."
+  },
+  {
+    "id": 4,
+    "topic": "Security",
+    "front": "What is the shared responsibility model in IaaS?",
+    "back": "Microsoft manages physical hardware. You manage OS, apps, and data.",
+    "explanation": "Think of it like renting a car. The company maintains the engine; you handle fuel and driving safely.",
+    "africanContext": "Like renting a matatu. The owner fixes the engine. You handle passengers and route."
+  },
+  {
+    "id": 5,
+    "topic": "Cost Management",
+    "front": "What is the benefit of Reserved Instances over Pay-As-You-Go?",
+    "back": "Reserved Instances offer significant discounts (up to 72%) for 1 or 3 year commitments.",
+    "explanation": "Pay-as-you-go is like daily taxi fares. Reserved is like a monthly bus pass — cheaper if you use it regularly.",
+    "africanContext": "Daily boda-boda fare vs. paying weekly for a regular rider."
+  },
+  {
+    "id": 6,
+    "topic": "Compliance",
+    "front": "What does Azure Policy help enforce?",
+    "back": "Rules and effects over resources to ensure compliance and cost efficiency.",
+    "explanation": "It acts like a guardrail. If someone tries to create a resource that breaks rules, Policy blocks or warns them.",
+    "africanContext": "Like traffic signs on a highway. They keep everyone moving safely and legally."
+  },
+  {
+    "id": 7,
+    "topic": "Cloud Models",
+    "front": "What is a Hybrid Cloud?",
+    "back": "A mix of public cloud and private/on-premises infrastructure connected together.",
+    "explanation": "You keep sensitive data on your own servers but burst to the public cloud when demand spikes.",
+    "africanContext": "Like keeping cash in your shop safe but using mobile money (M-Pesa) for big transactions."
+  },
+  {
+    "id": 8,
+    "topic": "Core Services",
+    "front": "What is the purpose of Azure Resource Groups?",
+    "back": "Logical containers that hold related resources for an application, managed as a group.",
+    "explanation": "Think of it as a folder. All resources inside share lifecycle, permissions, and billing.",
+    "africanContext": "Like grouping all tools for one project in a single toolbox."
+  }
+]
