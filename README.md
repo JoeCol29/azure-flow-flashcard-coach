@@ -22,7 +22,7 @@ AzureFlow is an AI-powered flashcard coach that uses **Spaced Repetition** and *
 - **Deployment:** Vercel
 
 ## 📸 Demo
-[Add a screenshot or video link here]
+**🔴 Live Demo:** https://azure-flow-flashcard-coach.vercel.app
 
 ## 📂 Project Structure
 ```text
