@@ -17,7 +17,7 @@ AzureFlow is an AI-powered flashcard coach that uses **Spaced Repetition** and *
 
 ## 🛠️ Tech Stack
 - **Frontend:** Next.js 14, Tailwind CSS, Framer Motion
-- **Backend:** Supabase (Auth + Database)
+- **AI:** Vercel AI SDK + GPT-4o-mini (serverless API route)
 - **AI:** Vercel AI SDK + GPT-4o-mini
 - **Deployment:** Vercel
 
